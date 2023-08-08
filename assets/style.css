@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Kreon:wght@300;500;700&family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kreon", serif;
+}
+
+body {
+  height: 100vh;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#header {
+  width: 100vw;
+  height: 100vh;
+  background: url(./Imagens/banner.png);
+  background-position: top;
+  background-size: cover;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  font: 18px bold;
+  padding: 0 4rem;
+}
+
+#menu__logo img {
+  margin-top: 15px;
+  width: 100px;
+  height: 100px;
+}
+
+.menu__nav {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.menu__nav a {
+  color: white;
+}
+
+#header__content {
+  width: 30vw;
+  color: white;
+  font-size: 16px;
+  margin-left: 7rem;
+  margin-top: 4rem;
+  line-height: 1.1;
+}
+
+.content__span {
+  font-size: 72px;
+  font-weight: bold;
+  color: #e7821e;
+}
+
+.content__button {
+  width: 300px;
+  padding: 10px;
+  color: white;
+  background: #e7821e;
+  font-size: 16px;
+  border: none;
+}
+.content__social-media {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  padding: 2rem 0;
+}
+
+.social-media__link {
+  font-size: 24px;
+  color: white;
+}
+
+.link__icon {
+  color: #e7821e;
+  font-size: 24px;
+  margin-right: 5px;
+  padding: 8px;
+  border: 2px solid #e7821e;
+  border-radius: 50%;
+}
