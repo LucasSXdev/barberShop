@@ -7,8 +7,9 @@
   font-family: "Kreon", serif;
 }
 
+html,
 body {
-  height: 100vh;
+  overflow-x: hidden;
 }
 
 li {
@@ -20,11 +21,12 @@ a {
 }
 
 #header {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  min-height: 100vh;
   background: url(./Imagens/banner.png);
   background-position: top;
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .header__menu {
@@ -51,7 +53,7 @@ a {
 }
 
 #header__content {
-  width: 30vw;
+  width: 30%;
   color: white;
   font-size: 16px;
   margin-left: 7rem;
@@ -66,7 +68,7 @@ a {
 }
 
 .content__button {
-  width: 300px;
+  width: 80%;
   padding: 10px;
   color: white;
   background: #e7821e;
@@ -92,4 +94,39 @@ a {
   padding: 8px;
   border: 2px solid #e7821e;
   border-radius: 50%;
+}
+
+#marquee__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  gap: 10rem;
+  font-size: 24px;
+  background-color: #e7821e;
+  color: white;
+  overflow: hidden;
+}
+
+.marquee__group {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+  min-width: 100%;
+  gap: 10rem;
+  animation: marquee 20s linear infinite;
+  text-transform: uppercase;
+}
+
+.marquee__message {
+  white-space: nowrap;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-100% - 10rem));
+  }
 }
