@@ -1,0 +1,17 @@
+#about {
+  display: flex;
+  justify-content: space-between;
+}
+
+#about__img {
+  width: 40vw;
+}
+
+.about__content {
+  padding: 2rem 0;
+}
+
+.about__description {
+  font-size: 24px;
+  padding: 4rem;
+}

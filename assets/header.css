@@ -1,45 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Kreon:wght@300;500;700&family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Kreon", serif;
-}
-
-html,
-body {
-  overflow-x: hidden;
-}
-
-li {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-}
-
 #header {
-  width: 100%;
-  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
   background: url(./Imagens/banner.png);
-  background-position: top;
+  background-position: top center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .header__menu {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   font: 18px bold;
-  padding: 0 4rem;
+  padding: 1.5rem 7rem;
 }
 
 #menu__logo img {
-  margin-top: 15px;
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
 }
 
 .menu__nav {
@@ -61,17 +41,17 @@ a {
   line-height: 1.1;
 }
 
-.content__span {
+.header__span {
   font-size: 72px;
   font-weight: bold;
-  color: #e7821e;
+  color: var(--main-color);
 }
 
-.content__button {
+.header__button {
   width: 80%;
   padding: 10px;
   color: white;
-  background: #e7821e;
+  background: var(--main-color);
   font-size: 16px;
   border: none;
 }
@@ -84,7 +64,7 @@ a {
 
 .social-media__link {
   font-size: 24px;
-  color: white;
+  color: var(--second-color);
 }
 
 .link__icon {
@@ -92,7 +72,7 @@ a {
   font-size: 24px;
   margin-right: 5px;
   padding: 8px;
-  border: 2px solid #e7821e;
+  border: 2px solid var(--main-color);
   border-radius: 50%;
 }
 
@@ -102,8 +82,8 @@ a {
   padding: 1.5rem 2rem;
   gap: 10rem;
   font-size: 24px;
-  background-color: #e7821e;
-  color: white;
+  background-color: var(--main-color);
+  color: var(--second-color);
   overflow: hidden;
 }
 
@@ -131,27 +111,4 @@ a {
   }
 }
 
-#about {
-  display: flex;
-  justify-content: space-between;
-}
-
-#about__img {
-  width: 40vw;
-}
-
-.about__content {
-  padding: 2rem 0;
-}
-
-.about__title {
-  text-align: center;
-  font-size: 32px;
-  color: #e7821e;
-  text-transform: uppercase;
-}
-
-.about__description {
-  font-size: 24px;
-  padding: 4rem;
-}
+/*header-------------------------------------------------*/

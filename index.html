@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>barber shop</title>
     <!--CSS-->
-    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/commom.css" />
+    <link rel="stylesheet" href="./assets/header.css" />
+    <link rel="stylesheet" href="./assets/about.css" />
+    <link rel="stylesheet" href="./assets/services.css" />
+    <link rel="stylesheet" href="./assets/galery.css" />
+    <link rel="stylesheet" href="./assets/contact.css" />
     <link
       rel="stylesheet"
       href="./assets/fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.min.css"
@@ -30,8 +35,8 @@
       </div>
 
       <div id="header__content">
-        <h1 class="content__title">MUITO MAIS QUE UMA</h1>
-        <span class="content__span">BARBEARIA</span>
+        <h1 class="header__title">MUITO MAIS QUE UMA</h1>
+        <span class="header__span">BARBEARIA</span>
 
         <div class="content__social-media">
           <a href="#" class="social-media__link"
@@ -45,7 +50,7 @@
           >
         </div>
 
-        <button class="content__button">AGENDE SEU HORÁRIO</button>
+        <button class="header__button">AGENDE SEU HORÁRIO</button>
       </div>
     </header>
 
@@ -79,12 +84,12 @@
     <section id="about">
       <img
         src="./assets/Imagens/varios-aparadores-na-penteadeira.jpg"
-        alt=""
+        alt="imagem-penteadeira"
         id="about__img"
       />
 
       <div class="about__content">
-        <h2 class="about__title">Sobre nós</h2>
+        <h2 class="section__title">Sobre nós</h2>
         <p class="about__description">
           Na Nossa Barbearia, acreditamos que cada homem é uma história por
           contar, e nosso objetivo é ajudá-lo a contar a sua através do seu
@@ -96,15 +101,78 @@
       </div>
     </section>
 
-    <section id="Services">
-      <h2>Nossos serviços</h2>
-      <div class="services-card"></div>
-      <div class="services-card"></div>
-      <div class="services-card"></div>
+    <section id="services">
+      <h2 class="section__title">Nossos serviços</h2>
+      <div id="services__content">
+        <div class="services__card">
+          <img
+            src="./assets/Imagens/ícone-tesoura.png"
+            alt=""
+            class="service-card__img"
+          />
+          <h4 class="service-card__title">Corte</h4>
+          <p class="service-card__description">
+            Realce o seu estilo com um corte de cabelo feito sob medida para
+            você.
+          </p>
+
+          <span class="service-card__price">$ 40</span>
+        </div>
+
+        <div class="services__card">
+          <img
+            src="./assets/Imagens/icone-navalha.png"
+            alt=""
+            class="service-card__img"
+          />
+
+          <h4 class="service-card__title">Barba</h4>
+          <p class="service-card__description">
+            Seja qual for o seu estilo de barba, nós o aprimoramos com maestria.
+          </p>
+
+          <span class="service-card__price">$ 30</span>
+        </div>
+
+        <div class="services__card">
+          <img
+            src="./assets/Imagens/icone-pinça.png"
+            alt=""
+            class="service-card__img"
+          />
+          <h4 class="service-card__title">Sombrancelha</h4>
+          <p class="service-card__description">
+            Destaque o seu olhar com sobrancelhas perfeitamente modeladas
+          </p>
+          <span class="service-card__price">$ 10</span>
+        </div>
+
+        <div class="services__card">
+          <div>
+            <img
+              src="./assets/Imagens/ícone-tesoura.png"
+              alt=""
+              class="service-card__img"
+            />
+            <img
+              src="./assets/Imagens/icone-navalha.png"
+              alt=""
+              class="service-card__img"
+            />
+          </div>
+
+          <h4 class="service-card__title">Combo</h4>
+          <p class="service-card__description">
+            Experimente uma jornada completa de cuidado pessoal com nosso combo
+            exclusivo.
+          </p>
+          <span class="service-card__price">$ 60</span>
+        </div>
+      </div>
     </section>
 
-    <section class="galery">
-      <h2>Galeria</h2>
+    <section id="galery">
+      <h2 class="section__title">Galeria</h2>
       <div id="galery-container"></div>
     </section>
 
