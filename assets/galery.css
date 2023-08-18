@@ -1,0 +1,23 @@
+#galery {
+  padding: 5rem;
+}
+
+#galery__container {
+  max-width: 1000px;
+  margin: 4rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-flow: dense;
+  gap: 10px;
+
+  text-align: center;
+}
+
+.galery__item {
+  width: 100%;
+  overflow: hidden;
+}
+
+.v-stretch {
+  grid-row: span 2;
+}
