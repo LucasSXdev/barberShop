@@ -1,6 +1,10 @@
 #services {
-  padding: 5rem 5rem;
-  background-color: var(--third-color);
+  height: 100vh;
+  display: grid;
+  align-content: center;
+  padding: 2rem 0 5rem 0;
+  background: url("./Imagens/background2.jpg");
+  background-size: cover;
 }
 
 #services__content {
@@ -22,6 +26,11 @@
   gap: 20px;
   padding: 20px;
   background-color: var(--second-color);
+  transition: 0.5s;
+}
+
+.services__card:hover {
+  transform: scale(1.1);
 }
 
 .service-card__img {

@@ -173,47 +173,90 @@
 
     <section id="galery">
       <h2 class="section__title">Galeria</h2>
+
       <div id="galery__container">
-        <img
-          src="./assets/Imagens/barba-de-corte-de-homem-bonito-em-um-salao-de-barbearia.jpg"
-          alt=""
-          class="galery__item"
-        />
-        <img
-          src="./assets/Imagens/cabeleireiro-em-uma-barbearia-penteando-o-cabelo-de-um-cliente.jpg"
-          alt=""
-          class="galery__item v-stretch"
-        />
-        <img
-          src="./assets/Imagens/varios-aparadores-na-penteadeira.jpg"
-          alt=""
-          class="galery__item"
-        />
-        <img
-          src="./assets/Imagens/cliente-fazendo-o-corte-de-cabelo-em-um-salao-de-barbearia.jpg"
-          alt=""
-          class="galery__item"
-        />
-        <img
-          src="./assets/Imagens/varios-aparadores-na-penteadeira.jpg"
-          alt=""
-          class="galery__item"
-        />
-        <img
-          src="./assets/Imagens/barba-de-corte-de-homem-bonito-em-um-salao-de-barbearia.jpg"
-          alt=""
-          class="galery__item"
-        />
-        <img
-          src="./assets/Imagens/barba-de-corte-de-homem-bonito-em-um-salao-de-barbearia.jpg"
-          alt=""
-          class="galery__item"
-        />
+        <figure class="galery__item item1">
+          <img
+            src="./assets/Imagens/barba-de-corte-de-homem-bonito-em-um-salao-de-barbearia.jpg"
+            alt=""
+            class="galery__img"
+          />
+        </figure>
+
+        <figure class="galery__item item2">
+          <img
+            src="./assets/Imagens/cabeleireiro-em-uma-barbearia-penteando-o-cabelo-de-um-cliente.jpg"
+            alt=""
+            class="galery__img"
+          />
+        </figure>
+
+        <figure class="galery__item item3">
+          <img
+            src="./assets/Imagens/cliente-fazendo-o-corte-de-cabelo-em-um-salao-de-barbearia.jpg"
+            alt=""
+            class="galery__img"
+          />
+        </figure>
+
+        <figure class="galery__item item4">
+          <img
+            src="./assets/Imagens/homem-bonito-na-barbearia-barbeando-a-barba.jpg"
+            alt=""
+            class="galery__img"
+          />
+        </figure>
+
+        <figure class="galery__item item5">
+          <img
+            src="./assets/Imagens/barba-de-corte-de-homem-bonito-em-um-salao-de-barbearia.jpg"
+            alt=""
+            class="galery__img"
+          />
+        </figure>
+
+        <figure class="galery__item item6">
+          <img
+            src="./assets/Imagens/varios-aparadores-na-penteadeira.jpg"
+            alt=""
+            class="galery__img"
+          />
+        </figure>
       </div>
     </section>
 
     <section id="contact">
-      <h2>Entre em contato</h2>
+      <div class="form-container">
+        <h3>Fale conosco</h3>
+        <form action="">
+          <input type="text" placeholder="Nome" />
+          <div class="form__input-box">
+            <input type="email" placeholder="Email" />
+            <input type="tel" placeholder="Telefone" />
+          </div>
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+          <button class="form__button">Enviar</button>
+        </form>
+      </div>
+
+      <div class="localization-container">
+        <h3>Onde nos encontrar</h3>
+        <iframe
+          class="localization__map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116875.83475319411!2d-46.933711133982854!3d-23.73418756520321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cfad63bcaa3ec5%3A0xcb5cbf33fd10fd27!2sItapecerica%20da%20Serra%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1696307180651!5m2!1spt-BR!2sbr"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <p class="localization__info">
+          <i class="fa-solid fa-phone" style="color: #e7821e"></i>
+          (11)3456-9475
+        </p>
+        <p class="localization__info">
+          <i class="fa-regular fa-envelope" style="color: #e7821e"></i>
+          contato@barbershop.com
+        </p>
+      </div>
     </section>
 
     <footer>footer</footer>
