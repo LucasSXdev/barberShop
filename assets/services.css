@@ -1,5 +1,5 @@
 #services {
-  height: 100vh;
+  height: 800px;
   display: grid;
   align-content: center;
   padding: 2rem 0 5rem 0;
@@ -27,6 +27,7 @@
   padding: 20px;
   background-color: var(--second-color);
   transition: 0.5s;
+  border: 6px double var(--main-color);
 }
 
 .services__card:hover {
