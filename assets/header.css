@@ -3,9 +3,9 @@
 #header {
   width: 100vw;
   max-height: 800px;
-  background: url(./Imagens/banner3.png);
+  background: url(./Imagens/fundo.png);
   background-size: contain;
-  background-position: 90%;
+  background-position: 80%;
   background-size: cover;
 }
 
@@ -26,18 +26,28 @@
   display: flex;
   align-items: center;
 
-  gap: 2rem;
+  gap: 4rem;
 }
 
-#nav__menu a {
+.nav__link {
+  display: block;
   color: white;
+  transition: all 0.3s ease;
+}
+
+.nav__link:hover {
+  transform: translateY(-5px);
+  color: var(--main-color);
 }
 #area__banner {
   display: flex;
   align-items: center;
-  width: 100vw;
+  width: 100%;
+  background-image: url("./Imagens/newbanner1.png");
+  background-size: cover;
+  background-position: 90%;
+  background-repeat: no-repeat;
   height: calc(100vh - 105px);
-  max-height: 700px;
 }
 
 .banner__content {
@@ -58,8 +68,22 @@
   color: white;
   background: var(--main-color);
   font-size: 16px;
-  border: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
+
+.banner__button:hover {
+  width: 320px;
+  background-color: black;
+  border: 1px solid var(--main-color);
+}
+
+#arrow-horizontal {
+  fill: var(--second-color);
+  transform: translateX(20px);
+}
+
 .banner__social-media {
   display: flex;
   gap: 15px;
@@ -68,8 +92,15 @@
 }
 
 .social-media__link {
+  display: block;
   font-size: 24px;
   color: var(--second-color);
+  transition: all 0.3s ease;
+}
+
+.social-media__link:hover {
+  color: var(--main-color);
+  transform: translateX(20px);
 }
 
 .link__icon {
