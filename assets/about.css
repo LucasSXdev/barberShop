@@ -1,8 +1,8 @@
 #about {
+  padding: 10px 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 70vh;
 }
 
 #about__img {
@@ -13,5 +13,23 @@
 
 .about__description {
   font-size: max(16px, 1.7vw);
-  padding: 2rem 4rem;
+  padding: 2rem 3rem;
+}
+
+@media (max-width: 650px) {
+  #about {
+    padding-top: 10px;
+    flex-direction: column;
+  }
+
+  #about__img {
+    width: 80vw;
+    height: 250px;
+    margin-bottom: 15px;
+  }
+
+  .about__description {
+    padding-top: 10px;
+    padding: 20px;
+  }
 }
