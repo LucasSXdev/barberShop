@@ -2,7 +2,7 @@
 
 #header {
   width: 100vw;
-  max-height: 800px;
+  max-height: 700px;
   background: url(./Imagens/fundo.png);
   background-size: contain;
   background-position: 80%;
@@ -10,26 +10,29 @@
 }
 
 .navbar {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font: 18px bold;
-  padding: 15px 7rem;
+  padding: 15px 4rem;
 }
 
 .navbar__logo img {
-  width: 70px;
+  margin-top: 10px;
+  width: 80px;
   height: 70px;
+  object-fit: cover;
 }
 
 #nav__menu {
   display: flex;
   align-items: center;
-
   gap: 4rem;
 }
 
 .nav__link {
+  font-size: max(14px, 1.3vw);
+  font-weight: bold;
   display: block;
   color: white;
   transition: all 0.3s ease;
@@ -52,36 +55,40 @@
 
 .banner__content {
   color: white;
-  margin-left: 7rem;
-  line-height: 1.1;
+  margin-left: 4rem;
+  line-height: 1.2;
+}
+
+.banner__title {
+  font-size: max(18px, 2.5vw);
 }
 
 .banner__title-orange {
-  font-size: 72px;
+  font-size: max(50px, 6vw);
   font-weight: bold;
   color: var(--main-color);
 }
 
 .banner__button {
-  width: 300px;
-  padding: 10px;
+  width: 25vw;
+  min-width: 250px;
+  padding: 12px;
   color: white;
   background: var(--main-color);
-  font-size: 16px;
-  border: 1px solid transparent;
+  font-size: max(14px, 1.4vw);
+  border: 2px solid transparent;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .banner__button:hover {
-  width: 320px;
   background-color: black;
-  border: 1px solid var(--main-color);
+  border: 2px solid var(--main-color);
 }
 
 #arrow-horizontal {
   fill: var(--second-color);
-  transform: translateX(20px);
+  transform: translateX(30px);
 }
 
 .banner__social-media {
@@ -93,7 +100,7 @@
 
 .social-media__link {
   display: block;
-  font-size: 24px;
+  font-size: max(16px, 1.8vw);
   color: var(--second-color);
   transition: all 0.3s ease;
 }
@@ -110,6 +117,43 @@
   padding: 8px;
   border: 2px solid var(--main-color);
   border-radius: 50%;
+}
+
+.disable {
+  display: none;
+}
+
+#hamburguer {
+  position: absolute;
+  top: 30px;
+  background: transparent;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+  border: none;
+}
+
+#hamburguer::before,
+#hamburguer::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: var(--main-color);
+  margin-top: 10px;
+  transition: 0.3s;
+  position: relative;
+}
+
+#hamburguer span {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: var(--main-color);
+  margin-top: 10px;
+  transition: 0.3s;
+  position: relative;
 }
 
 #marquee__container {
@@ -147,4 +191,14 @@
   }
 }
 
-/*header-------------------------------------------------*/
+/*--responsividade----------*/
+
+@media (max-width: 850px) {
+  #nav__menu {
+    display: none;
+  }
+
+  #hamburguer {
+    display: block;
+  }
+}
