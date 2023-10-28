@@ -119,11 +119,12 @@
   border-radius: 50%;
 }
 
-.disable {
+#nav__menu-mobile,
+#button__mobile {
   display: none;
 }
 
-#hamburguer {
+#button__mobile {
   position: absolute;
   top: 30px;
   background: transparent;
@@ -133,8 +134,8 @@
   border: none;
 }
 
-#hamburguer::before,
-#hamburguer::after {
+#button__mobile::before,
+#button__mobile::after {
   content: "";
   display: block;
   width: 40px;
@@ -145,8 +146,7 @@
   position: relative;
 }
 
-#hamburguer span {
-  content: "";
+#hamburguer {
   display: block;
   width: 40px;
   height: 2px;
@@ -198,8 +198,52 @@
     display: none;
   }
 
-  #hamburguer {
+  #nav__menu-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100vh;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.8);
+    visibility: hidden;
+    overflow: hidden;
+    backdrop-filter: blur(2px);
+    white-space: nowrap;
+    transition: 0.5s ease;
+  }
+
+  #nav__menu-mobile a {
+    font-size: 20px;
+    position: relative;
+    left: 15px;
+    top: 15px;
+  }
+
+  #nav__menu-mobile.active {
+    width: 50vw;
+    visibility: visible;
+  }
+
+  #button__mobile {
     display: block;
+    transition: 0.5s;
+  }
+
+  #button__mobile.active#button__mobile::before {
+    background-color: transparent;
+  }
+
+  #button__mobile.active #hamburguer {
+    transform: rotate(-135deg);
+  }
+
+  #button__mobile.active#button__mobile::after {
+    transform: rotate(135deg);
+    top: -12px;
   }
 
   #marquee__container {
