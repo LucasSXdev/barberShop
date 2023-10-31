@@ -219,8 +219,8 @@
   #nav__menu-mobile a {
     font-size: 20px;
     position: relative;
-    left: 15px;
-    top: 15px;
+    left: 20px;
+    top: 40px;
   }
 
   #nav__menu-mobile.active {
@@ -231,6 +231,7 @@
   #button__mobile {
     display: block;
     transition: 0.5s;
+    z-index: 3;
   }
 
   #button__mobile.active#button__mobile::before {
@@ -252,6 +253,10 @@
 }
 
 @media (max-width: 400px) {
+  #nav__menu-mobile.active {
+    width: 100vw;
+  }
+
   .navbar {
     padding-left: 2rem;
   }

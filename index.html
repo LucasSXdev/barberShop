@@ -16,7 +16,8 @@
       href="./assets/fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.min.css"
     />
     <!--Javascript-->
-    <script src="index.js" defer></script>
+    <script src="menuToggle.js" defer></script>
+    <script src="bigImage.js" defer></script>
   </head>
   <body>
     <header id="header">
@@ -24,6 +25,9 @@
         <div class="navbar__logo">
           <img src="./assets/Imagens/logo.png" alt="" />
         </div>
+        <button id="button__mobile">
+          <span id="hamburguer"></span>
+        </button>
 
         <ul id="nav__menu">
           <li class="menu__item">
@@ -64,13 +68,10 @@
             <a class="nav__link" href="">CONTATO</a>
           </li>
         </ul>
-
-        <button id="button__mobile">
-          <span id="hamburguer"></span>
-        </button>
       </nav>
 
       <div id="area__banner">
+        <div class="overlay"></div>
         <div class="banner__content">
           <h1 class="banner__title">MUITO MAIS QUE UMA</h1>
           <h1 class="banner__title-orange">BARBEARIA</h1>
@@ -290,6 +291,10 @@
             class="galery__img"
           />
         </figure>
+      </div>
+      <div class="big__image">
+        <span>&times</span>
+        <img src="" alt="" />
       </div>
     </section>
 
