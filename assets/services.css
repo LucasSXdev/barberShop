@@ -1,8 +1,7 @@
 #services {
   align-content: center;
   padding: 2rem 0 5rem 0;
-  background: url("./Imagens/background2.jpg");
-  background-size: cover;
+  background-color: var(--bg-color);
 }
 
 #services__content {
