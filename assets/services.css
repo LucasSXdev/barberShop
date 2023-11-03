@@ -23,9 +23,11 @@
   align-items: center;
   gap: 20px;
   padding: 20px;
-  background-color: var(--second-color);
+  border-radius: 10px;
+  color: var(--tertiary-color);
+  background-color: var(--main-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: 0.5s;
-  border: 6px double var(--main-color);
 }
 
 .services__card:hover {
@@ -39,15 +41,14 @@
 .service-card__title {
   font-size: 18px;
   text-transform: uppercase;
-  color: var(--main-color);
 }
 
 .service-card__description {
   text-align: center;
-  color: var(--font-color);
 }
 
 .service-card__price {
   font-size: 24px;
   font-weight: bold;
+  color: var(--bg-color);
 }
