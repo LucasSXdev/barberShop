@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Kreon:wght@300;500;700&family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kreon", serif;
+}
+
+:root {
+  --main-color: #e7821e;
+  --bg-color: #1a1a1a;
+  --second-color: #f2f2f2;
+  --font-color: #868383;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: inherit;
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+
+  pointer-events: none; /* Garante que o clique passe através do elemento pseudo-elemento */
+  transition: filter 0.3s ease;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section__title {
+  text-align: center;
+  font-size: max(1.5rem, 2.5vw);
+  color: #e7821e;
+  text-transform: uppercase;
+}
+
+#buttonToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background-color: var(--main-color);
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  line-height: 60px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.5s ease-in-out;
+  display: none;
+}
+
+#buttonToTop:hover {
+  transform: scale(1.1);
+}

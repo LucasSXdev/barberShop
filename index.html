@@ -3,22 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>barber shop</title>
+    <title>Barber shop</title>
     <!--CSS-->
-    <link rel="stylesheet" href="./assets/commom.css" />
-    <link rel="stylesheet" href="./assets/header.css" />
-    <link rel="stylesheet" href="./assets/about.css" />
-    <link rel="stylesheet" href="./assets/services.css" />
-    <link rel="stylesheet" href="./assets/galery.css" />
-    <link rel="stylesheet" href="./assets/contact.css" />
-    <link rel="stylesheet" href="./assets/footer.css" />
+    <link rel="stylesheet" href="./css/commom.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/services.css" />
+    <link rel="stylesheet" href="./css/galery.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
     <link
       rel="stylesheet"
-      href="./assets/fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
     <!--Javascript-->
-    <script src="menuToggle.js" defer></script>
-    <script src="bigImage.js" defer></script>
+    <script src="./Js/menuToggle.js" defer></script>
+    <script src="./Js/bigImage.js" defer></script>
+    <script src="./Js/index.js" defer></script>
   </head>
   <body>
     <header id="header">
@@ -89,23 +90,7 @@
             >
           </div>
 
-          <button class="banner__button">
-            <span>AGENDE SEU HORÁRIO</span>
-            <svg
-              viewBox="0 0 46 16"
-              height="10"
-              width="30"
-              xmlns="http://www.w3.org/2000/svg"
-              id="arrow-horizontal"
-            >
-              <path
-                transform="translate(30)"
-                d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
-                data-name="Path 10"
-                id="Path_10"
-              ></path>
-            </svg>
-          </button>
+          <button class="banner__button">AGENDE SEU HORÁRIO</button>
         </div>
       </div>
     </header>
@@ -139,7 +124,7 @@
 
     <section id="about">
       <img
-        src="./assets/Imagens/varios-aparadores-na-penteadeira.jpg"
+        src="./assets/Imagens/penteadeira.jpg"
         alt="imagem-penteadeira"
         id="about__img"
       />
@@ -159,6 +144,10 @@
 
     <section id="services">
       <h2 class="section__title">Nossos serviços</h2>
+      <p class="services__description">
+        Proporcionamos experiências únicas e transformadoras para realçar sua
+        beleza e bem-estar.
+      </p>
       <div id="services__content">
         <div class="services__card">
           <img
@@ -231,63 +220,50 @@
       <h2 class="section__title">Galeria</h2>
 
       <div id="galery__container">
-        <figure class="galery__item item1">
-          <img
-            src="./assets/Imagens/barba-de-corte-de-homem-bonito-em-um-salao-de-barbearia.jpg"
-            alt=""
-            class="galery__img"
-          />
+        <figure class="galery__item">
+          <img src="./assets/Imagens/img1.jpg" alt="" class="galery__img" />
         </figure>
 
-        <figure class="galery__item item2">
-          <img
-            src="./assets/Imagens/cabeleireiro-em-uma-barbearia-penteando-o-cabelo-de-um-cliente.jpg"
-            alt=""
-            class="galery__img"
-          />
+        <figure class="galery__item">
+          <img src="./assets/Imagens/img2.jpg" alt="" class="galery__img" />
         </figure>
 
-        <figure class="galery__item item3">
-          <img
-            src="./assets/Imagens/cliente-fazendo-o-corte-de-cabelo-em-um-salao-de-barbearia.jpg"
-            alt=""
-            class="galery__img"
-          />
+        <figure class="galery__item">
+          <img src="./assets/Imagens/img3.jpg" alt="" class="galery__img" />
         </figure>
 
-        <figure class="galery__item item4">
-          <img
-            src="./assets/Imagens/homem-bonito-na-barbearia-barbeando-a-barba.jpg"
-            alt=""
-            class="galery__img"
-          />
+        <figure class="galery__item">
+          <img src="./assets/Imagens/img4.jpg" alt="" class="galery__img" />
         </figure>
 
-        <figure class="galery__item item5">
-          <img
-            src="./assets/Imagens/barba-de-corte-de-homem-bonito-em-um-salao-de-barbearia.jpg"
-            alt=""
-            class="galery__img"
-          />
+        <figure class="galery__item">
+          <img src="./assets/Imagens/img5.jpg" alt="" class="galery__img" />
         </figure>
 
-        <figure class="galery__item item6">
+        <figure class="galery__item">
           <img
-            src="./assets/Imagens/varios-aparadores-na-penteadeira.jpg"
+            src="./assets/Imagens/penteadeira.jpg"
             alt=""
             class="galery__img"
           />
         </figure>
-        <figure class="galery__item item7">
+        <figure class="galery__item">
           <img
-            src="./assets/Imagens/varios-aparadores-na-penteadeira.jpg"
+            src="./assets/Imagens/penteadeira.jpg"
             alt=""
             class="galery__img"
           />
         </figure>
-        <figure class="galery__item item8">
+        <figure class="galery__item">
           <img
-            src="./assets/Imagens/varios-aparadores-na-penteadeira.jpg"
+            src="./assets/Imagens/penteadeira.jpg"
+            alt=""
+            class="galery__img"
+          />
+        </figure>
+        <figure class="galery__item">
+          <img
+            src="./assets/Imagens/penteadeira.jpg"
             alt=""
             class="galery__img"
           />
@@ -345,5 +321,7 @@
       <img src="./assets/Imagens/logo.png" alt="" />
       <p>Feito por Lucas de Souza Xavier-todos os direitos reservados</p>
     </footer>
+
+    <div id="buttonToTop">&#8593</div>
   </body>
 </html>

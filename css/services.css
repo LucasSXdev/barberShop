@@ -1,0 +1,61 @@
+#services {
+  align-content: center;
+  padding: 2rem 0 5rem 0;
+  background-color: var(--bg-color);
+  color: var(--font-color);
+}
+
+.services__description {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+#services__content {
+  margin-top: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.services__card {
+  width: 18vw;
+  min-width: 250px;
+  height: 300px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  color: var(--second-color);
+  background-color: var(--main-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+}
+
+.services__card:hover {
+  transform: scale(1.1);
+}
+
+.service-card__img {
+  width: 50px;
+}
+
+.service-card__title {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.service-card__description {
+  text-align: center;
+}
+
+.service-card__price {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--bg-color);
+}
