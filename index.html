@@ -19,7 +19,7 @@
     <!--Javascript-->
     <script src="./Js/menuToggle.js" defer></script>
     <script src="./Js/bigImage.js" defer></script>
-    <script src="./Js/index.js" defer></script>
+    <script src="./Js/buttonTop.js" defer></script>
   </head>
   <body>
     <header id="header">
@@ -33,41 +33,41 @@
 
         <ul id="nav__menu">
           <li class="menu__item">
-            <a class="nav__link" href="">HOME</a>
+            <a class="nav__link" href="#home">HOME</a>
           </li>
 
           <li class="menu__item">
-            <a class="nav__link" href="">QUEM SOMOS</a>
+            <a class="nav__link" href="#about">QUEM SOMOS</a>
           </li>
 
           <li class="menu__item">
-            <a class="nav__link" href="">NOSSOS SERVIÇOS</a>
+            <a class="nav__link" href="#services">NOSSOS SERVIÇOS</a>
           </li>
 
           <li class="menu__item">
-            <a class="nav__link" href="">GALERIA</a>
+            <a class="nav__link" href="#galery">GALERIA</a>
           </li>
 
           <li class="menu__item">
-            <a class="nav__link" href="">CONTATO</a>
+            <a class="nav__link" href="#contact">CONTATO</a>
           </li>
         </ul>
 
         <ul id="nav__menu-mobile">
           <li class="menu__item">
-            <a class="nav__link" href="">HOME</a>
+            <a class="nav__link" href="#home">HOME</a>
           </li>
           <li class="menu__item">
-            <a class="nav__link" href="">QUEM SOMOS</a>
+            <a class="nav__link" href="#about">QUEM SOMOS</a>
           </li>
           <li class="menu__item">
-            <a class="nav__link" href="">NOSSOS SERVIÇOS</a>
+            <a class="nav__link" href="#services">NOSSOS SERVIÇOS</a>
           </li>
           <li class="menu__item">
-            <a class="nav__link" href="">GALERIA</a>
+            <a class="nav__link" href="#galery">GALERIA</a>
           </li>
           <li class="menu__item">
-            <a class="nav__link" href="">CONTATO</a>
+            <a class="nav__link" href="#contact">CONTATO</a>
           </li>
         </ul>
       </nav>
@@ -90,7 +90,11 @@
             >
           </div>
 
-          <button class="banner__button">AGENDE SEU HORÁRIO</button>
+          <a
+            href="https://api.whatsapp.com/send?phone=551199999999&text=Agende%20seu%20hor%C3%A1rio"
+            class="banner__button"
+            >AGENDE SEU HORÁRIO</a
+          >
         </div>
       </div>
     </header>
@@ -221,29 +225,56 @@
 
       <div id="galery__container">
         <figure class="galery__item">
-          <img src="./assets/Imagens/img1.jpg" alt="" class="galery__img" />
+          <img
+            src="./assets/Imagens/img1.jpg"
+            alt="homem na barbearia"
+            class="galery__img"
+          />
         </figure>
 
         <figure class="galery__item">
-          <img src="./assets/Imagens/img2.jpg" alt="" class="galery__img" />
+          <img
+            src="./assets/Imagens/img2.jpg"
+            alt="homem na barbearia"
+            class="galery__img"
+          />
         </figure>
 
         <figure class="galery__item">
-          <img src="./assets/Imagens/img3.jpg" alt="" class="galery__img" />
+          <img
+            src="./assets/Imagens/img3.jpg"
+            alt="homem na barbearia"
+            class="galery__img"
+          />
         </figure>
 
         <figure class="galery__item">
-          <img src="./assets/Imagens/img4.jpg" alt="" class="galery__img" />
+          <img
+            src="./assets/Imagens/img4.jpg"
+            alt="homem na barbearia"
+            class="galery__img"
+          />
         </figure>
 
         <figure class="galery__item">
-          <img src="./assets/Imagens/img5.jpg" alt="" class="galery__img" />
+          <img
+            src="./assets/Imagens/img5.jpg"
+            alt="homem na barbearia"
+            class="galery__img"
+          />
         </figure>
 
         <figure class="galery__item">
           <img
             src="./assets/Imagens/penteadeira.jpg"
-            alt=""
+            alt="homem na barbearia"
+            class="galery__img"
+          />
+        </figure>
+        <figure class="galery__item">
+          <img
+            src="./assets/Imagens/penteadeira.jpg"
+            alt="homem na barbearia"
             class="galery__img"
           />
         </figure>
@@ -257,14 +288,7 @@
         <figure class="galery__item">
           <img
             src="./assets/Imagens/penteadeira.jpg"
-            alt=""
-            class="galery__img"
-          />
-        </figure>
-        <figure class="galery__item">
-          <img
-            src="./assets/Imagens/penteadeira.jpg"
-            alt=""
+            alt="homem na barbearia"
             class="galery__img"
           />
         </figure>
@@ -319,9 +343,9 @@
         <a href="#" class=""><i class="fab fa-instagram"></i></a>
       </div>
       <img src="./assets/Imagens/logo.png" alt="" />
-      <p>Feito por Lucas de Souza Xavier-todos os direitos reservados</p>
+      <p>Feito por Lucas de Souza Xavier</p>
     </footer>
 
-    <div id="buttonToTop">&#8593</div>
+    <div id="buttonToTop">&#8593;</div>
   </body>
 </html>
