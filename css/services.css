@@ -3,6 +3,7 @@
   padding: 2rem 0 5rem 0;
   background-color: var(--bg-color);
   color: var(--font-color);
+  min-height: 50vh;
 }
 
 .services__description {
@@ -23,6 +24,7 @@
 .services__card {
   width: 18vw;
   min-width: 250px;
+  max-width: 300px;
   height: 300px;
   min-height: 200px;
   display: flex;

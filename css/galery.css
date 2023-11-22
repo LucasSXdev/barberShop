@@ -8,6 +8,7 @@
 
 #galery__container {
   width: 90%;
+  max-width: 1700px;
   margin: 4rem auto;
   display: flex;
   justify-content: center;
